@@ -1,0 +1,125 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-family: sans-serif;
+  color: white;
+  text-align: center;
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body {
+  position: relative;
+  background: url('../img/background-image.jpg');
+  width: 100%;
+  height: 100vh;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.overlay {
+  position: absolute;
+  background-color: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100vh;
+}
+
+main {
+  position: absolute;
+  width: 100%;
+  padding: 16px;
+}
+
+.container {
+  max-width: 767px;
+  margin: auto;
+}
+
+#addCardContainer {
+  background: rgba(0, 0, 0, 0.5);
+  text-align: left;
+  padding: 16px;
+  border-radius: 8px;
+  margin: 32px 0;
+}
+
+ul {
+  margin: 24px 0;
+}
+
+li {
+  list-style-type: none;
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+li button,
+#reset {
+  cursor: pointer;
+  padding: 6px 12px;
+  text-transform: uppercase;
+  color: white;
+  background: none;
+  border: none;
+  border-radius: 4px;
+}
+
+li button {
+  margin-left: 16px;
+  background: green;
+}
+
+#reset {
+  display: block;
+  margin: auto;
+  border: 1px solid white;
+}
+
+.common,
+.rare,
+.epic,
+.legendary {
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  border-radius: 100%;
+}
+
+.common {
+  background-color: lightgray;
+}
+
+.rare {
+  background-color: blue;
+}
+
+.epic {
+  background-color: purple;
+}
+
+.legendary {
+  background-color: orange;
+}
+
+#totalDustCost {
+  min-height: 18.5px;
+}
+
+footer {
+  position: fixed;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  z-index: 2;
+  padding-bottom: 16px;
+}
+
+footer a {
+  color: white;
+}
